@@ -63,19 +63,22 @@ header {
   background: url('images/headerbg2.jpg') no-repeat top center;
   background-size: cover;
   overflow: hidden;
-  padding-top: 60px;
-  padding-right: 50px;
-  
+  padding-top: 105px;
+  padding-right: 70px;
+}
+.hello {
+  margin-top: -5px;
+  margin-bottom: -5px;
 }
 header {
     line-height: 1.5;
 }
 header .profile-image {
   text-align: center;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
-  border: 3px solid white;
+  /* border: 3px solid grey; */
   transition: all .5s;
 }
 
@@ -114,14 +117,15 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: grey;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background:#F2E8E7;
+  color: black;
 }
 
 footer {
@@ -163,6 +167,9 @@ a.linkedin {
 }
 a.github {
   background-image: url(images/github.svg);
+}
+a.blog {
+  background-image: url(images/tumblr.png);
 }
 a.social:hover {
   opacity: 1;
