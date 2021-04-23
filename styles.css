@@ -9,8 +9,9 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #f8e19a;
 }
+
 /* Link Styles */
 
 a {
@@ -22,19 +23,14 @@ a:hover {
 }
 
 /* Section Styles */
-
-.profile {
-    float: right;
-}
-
 .main-nav {
     width: 100%;
-    background: #D4D6DD;
-    min-height: 30px;
+    background: rgb(255, 192, 203);
     padding: 10px;
     position: fixed;
     text-align: center;
 }
+
 .nav {
   display: flex;
   justify-content: space-around;
@@ -56,18 +52,20 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: white;
+}
+.inlinelink {
+  text-decoration: underline;
+  color: blue;
 }
 
 header {
-  background: url('images/headerbg2.jpg') no-repeat top center;
+  background: url('images/background.jpg') no-repeat top center;
   background-size: cover;
   overflow: hidden;
   padding-top: 105px;
-  padding-right: 70px;
 }
 .hello {
-  margin-top: -5px;
   margin-bottom: -5px;
 }
 header {
@@ -75,15 +73,20 @@ header {
 }
 header .profile-image {
   text-align: center;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  /* border: 3px solid grey; */
+  border: 3px solid black;
   transition: all .5s;
 }
 
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
+}
+
+.funfacts {
+  background-size: 100% 250px;
+  margin-bottom: -200px;
 }
 .tag {
   color: black;
@@ -105,8 +108,21 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
+
 .card:hover {
   border-color: #ff99ff;
+}
+
+.experience {
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
 }
 
 ul.skills {
@@ -153,7 +169,7 @@ a.social {
   display: inline-block;
   text-indent: -9999px;
   margin-left: 5px;
-  width: 30px;
+  width: 30px;  
   height: 30px;
   background-size: 30px 30px;
   opacity: .4;
@@ -168,9 +184,7 @@ a.linkedin {
 a.github {
   background-image: url(images/github.svg);
 }
-a.blog {
-  background-image: url(images/tumblr.png);
-}
+
 a.social:hover {
   opacity: 1;
 }
